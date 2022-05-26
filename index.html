@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    
+    <title>Parkea2 &mdash; 2022 &copy;</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="./js/main.js"></script>
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🅿️ Parkea2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">➡️ Ingreso Vehículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">⬅️ Salida Vehículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">👨🏻‍💼 Administración</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-2 mt-3">
+        <div class="row p-2 mb-2 justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <h4 class="text-center">Menú Principal</h4>
+                <hr>
+                <div>
+                    <h6>Empresa &mdash; <span class="fw-bold">{empresa.nombre}</span></h6>
+                    <h6>Ubicación &mdash; <span class="fw-bold">{empresa.direccion}</span></h6>
+                </div>
+            </div>
+        </div>
+        <div class="row p-4 mx-3 justify-content-center border rounded shadow">
+            <div class="col-sm-12 text-center d-grid gap-2">
+                <button id="btnIngreso" name="btnIngreso" class="btn btn-primary btn-large" type="button" onclick="mostrarIngresar();">➡️ Ingreso Vehículo</button>
+            </div>
+            <div class="col-sm-12 text-center my-2 d-grid gap-2">
+                <button id="btnSalida" name="btnSalida" class="btn btn-danger btn-large" type="button">➡️ Salida Vehículo</button>
+            </div>
+            <div class="col-sm-12 text-center d-grid gap-2">
+                <button id="btnSalir" name="btnSalir" class="btn btn-warning btn-large" type="button">➡️ Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-dark bg-dark fixed-bottom shadow">
+        <div class="container">
+            <h6 class="text-white">🥷 { usuario } &mdash; 🕘 { horaActual }</h6>
+        </div>
+    </nav>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
